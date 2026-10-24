@@ -21,7 +21,6 @@ jobs:
     - name: Unzip Project
       run: |
         unzip -o sojib-ai.zip
-        # zip-এর ভেতর যদি আলাদা ফোল্ডার থাকে সেটির ভেতরে যাবে
         if [ -d "sojib-ai" ]; then
           cp -r sojib-ai/* .
         fi
