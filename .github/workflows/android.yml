@@ -20,7 +20,11 @@ jobs:
 
     - name: Unzip Project
       run: |
-        unzip sojib-ai.zip
+        unzip -o sojib-ai.zip
+        # zip-এর ভেতর যদি আলাদা ফোল্ডার থাকে সেটির ভেতরে যাবে
+        if [ -d "sojib-ai" ]; then
+          cp -r sojib-ai/* .
+        fi
         chmod +x gradlew || true
 
     - name: Build Debug APK
@@ -30,4 +34,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: "**/build/outputs/apk/debug/*.apk"
