@@ -18,16 +18,20 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Unzip Project
+    - name: Unzip and Build APK
       run: |
+        # ১. সব জিপ ফাইল আনজিপ করা
         unzip -o sojib-ai.zip
-        if [ -d "sojib-ai" ]; then
-          cp -r sojib-ai/* .
-        fi
-        chmod +x gradlew || true
-
-    - name: Build Debug APK
-      run: ./gradlew assembleDebug
+        
+        # ২. gradlew ফাইলটি খুঁজে বের করে সেই ফোল্ডারে যাওয়া
+        GRADLEW_FILE=$(find . -name "gradlew" -type f | head -n 1)
+        PROJECT_DIR=$(dirname "$GRADLEW_FILE")
+        
+        cd "$PROJECT_DIR"
+        chmod +x gradlew
+        
+        # ৩. প্রজেক্টের ভেতর থেকেই APK বিল্ড করা
+        ./gradlew assembleDebug
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
