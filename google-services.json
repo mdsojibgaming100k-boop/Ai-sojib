@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "350693551073",
+    "project_id": "topup-7849b",
+    "storage_bucket": "topup-7849b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350693551073:android:93ff0233972bf18bea00a0",
+        "android_client_info": {
+          "package_name": "com.sttopup.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350693551073-o2kicdrsqlvadr0e3c85k7jar6lab7lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRifDvyekH79snkyBiIwJtUMI-Fq1ImPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350693551073-6t6q385nk8hehh659k2mbb2t0s32o9mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350693551073:android:13bb0f1bea8cb7eeea00a0",
+        "android_client_info": {
+          "package_name": "com.sttopupadmin.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350693551073-o2kicdrsqlvadr0e3c85k7jar6lab7lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRifDvyekH79snkyBiIwJtUMI-Fq1ImPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350693551073-6t6q385nk8hehh659k2mbb2t0s32o9mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
